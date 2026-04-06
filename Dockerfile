@@ -22,7 +22,7 @@ RUN --mount=type=cache,target=/root/.cache/uv \
   uv sync --frozen --no-dev --python 3.14
 
 
-FROM python:3.14.3-slim-bookworm
+FROM python:3.15-rc-slim-trixie
 # It is important to use the image that matches the builder, as the path to the
 # Python executable must be the same, e.g., using `python:3.11-slim-bookworm`
 # will fail.
